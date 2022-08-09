@@ -2,13 +2,13 @@
 <html>
   <head>
     <style>
-      .flex-container {
+        .flex-container-icons {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
           }
 
-        .flex-container > div {
+        .flex-container-icons > div {
           width: 100px;
           height: 75px;
           margin: 10px;
@@ -16,14 +16,56 @@
           line-height: 75px;
           font-size: 30px;
           }
+        .flex-container-menu {
+          display: flex;
+          justify-content: center;
+          }
+
+        .flex-container-menu > div {
+          width: 150px;
+          height: 20px;
+          margin: 1px;
+          text-align: center;
+          line-height: 20px;
+          font-size: 15px;
+          }
+          .button {
+        /* background-color: #4CAF50; Green */
+        border: none;
+        /* color: white; */
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      .button1 {
+        /* background-color: white; */
+        color: white;
+        background-color: #1a1a1a;
+        border-radius: 3px;
+        /* border: 2px solid #555555; */
+      }
+
+      .button1:hover {
+        background-color: white;
+        color: black;
+      }
         body {
             background-image: url("aestheticbg.jpg");
-            margin-right: 50px;
-            margin-left: 50px;
+            background-size: cover;
+            background-attachment: fixed;
+            margin-right: 15%;
+            margin-left: 15%;
+        }
+        .icons{
+          transition: transform .2s;
         }
         .icons:hover {
           transform: scale(1.25);
-          transition-duration: 0.2s;
           }
         h1 {
             color: #faf0e6;
@@ -66,23 +108,33 @@
             border-image: url(border.png) 90 stretch;
 }       
 </style>
-    <meta charset="utf-8">
     <title>My Portfolio</title>
   </head>
   <body>
-    <br>
-    <br>
+    <div class="flex-container-menu">
+      <div>
+        <button class="button button1">Home</button>
+      </div>
+      <div>
+        <button class="button button1">My skills</button>
+      </div>
+      <div>
+        <button class="button button1">Show off?</button>
+      </div>
+      <div>
+        <button class="button button1">About me</button>
+      </div>
+    </div>
+    <br><br>
     <div>
-        <img class ="pfp" src="bruhify1.png" alt="pfp" width="200" height="200">
+        <img class ="pfp" src="bruhify1.png" alt="pfp" width="175" height="175">
         <p class="name">Abhisar Lal</p>
         <h2>Not in SDS lol</h2>
         <br>
         <h3>Hello! I'm Abhisar (bitchless), an IIT Roorkee undergrad, I'm no developer but im learning (thanks puttu <3). I'm also not in SDS but in better clubs like Music, Cinesec and Photog. So I win!!</h3>
     </div>
-    <br>
-    <br>
-    <br>
-    <div class="flex-container">
+    <br><br><br>
+    <div class="flex-container-icons">
       <div>
         <a href="https://www.instagram.com/_abhi_sar/">
           <img class="icons" src="insta logo.png" alt="insta" width="40" height="40"></a>
@@ -101,7 +153,7 @@
       </div>
       <div>
         <a href="https://discord.gg/qXFneptj">
-          <img class="icons" src="Discord logo.png" alt="discord" width="40" height="40"></a>
+          <img class="icons" src="Discord logo.png" alt="discord" width="45" height="45"></a>
       </div>
     </div>
   </body>
